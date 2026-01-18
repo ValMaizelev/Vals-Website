@@ -1,0 +1,34 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'>
+  <defs>
+    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#f7fbff'/>
+      <stop offset='100%' stop-color='#cfe9ff'/>
+    </linearGradient>
+  </defs>
+  <rect width='100%' height='100%' fill='url(#g)'/>
+  <g>
+    <rect x='80' y='80' rx='18' width='1440' height='740' fill='#ffffff' stroke='#e6eef8' stroke-width='2'/>
+    <text x='100' y='140' font-family='Inter, Arial' font-size='42' fill='#134b70' font-weight='800'>Ingestion & Pipelines</text>
+    <text x='100' y='190' font-family='Inter, Arial' font-size='26' fill='#475569'>Batch • Stream • CDC</text>
+
+    <!-- Simple enriched diagram -->
+    <g transform='translate(100,240)'>
+      <rect x='0' y='0' width='360' height='200' rx='14' fill='#eef6ff' stroke='#cfe1ff'/>
+      <text x='20' y='36' font-size='22' fill='#0f172a'>Raw</text>
+      <rect x='380' y='0' width='360' height='200' rx='14' fill='#e9f5ff' stroke='#cfe1ff'/>
+      <text x='400' y='36' font-size='22' fill='#0f172a'>Curated</text>
+      <rect x='760' y='0' width='360' height='200' rx='14' fill='#e6f3ff' stroke='#cfe1ff'/>
+      <text x='780' y='36' font-size='22' fill='#0f172a'>Semantic</text>
+      <rect x='1140' y='0' width='200' height='200' rx='14' fill='#eaf6ff' stroke='#cfe1ff'/>
+      <text x='1160' y='36' font-size='22' fill='#0f172a'>BI</text>
+      <path d='M360,100 L380,100 M740,100 L760,100 M1120,100 L1140,100' stroke='#1e90ff' stroke-width='6' marker-end='url(#arrow)'/>
+    </g>
+
+    <defs>
+      <marker id='arrow' viewBox='0 0 10 10' refX='10' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'>
+        <path d='M 0 0 L 10 5 L 0 10 z' fill='#1e90ff'/>
+      </marker>
+    </defs>
+  </g>
+</svg>
