@@ -70,37 +70,53 @@
       <li data-i18n='edw_item6'></li>
     </ul>
   </section>
-
   <!-- New Project Gallery -->
   <section class='card compact'>
     <h2 data-i18n='projects_gallery'>Project Gallery</h2>
-    <ul class='gallery-grid'>
-      <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_exec.svg' data-title='Executive KPI Dashboard'>
-        <img src='assets/gallery/dashboard_exec_thumb.svg' alt='Executive KPI Dashboard thumbnail'>
-        <div class='meta'><p class='title'>Executive KPI Dashboard</p><p class='desc'>Revenue • Margin • Volume • Churn</p></div>
-      </a></li>
-      <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_elasticity.svg' data-title='Pricing Elasticity'>
-        <img src='assets/gallery/dashboard_elasticity_thumb.svg' alt='Pricing Elasticity dashboard thumbnail'>
-        <div class='meta'><p class='title'>Pricing Elasticity</p><p class='desc'>Demand curves and competitor bands</p></div>
-      </a></li>
-      <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_geo.svg' data-title='Geo Heatmap'>
-        <img src='assets/gallery/dashboard_geo_thumb.svg' alt='Geo heatmap dashboard thumbnail'>
-        <div class='meta'><p class='title'>Geo Heatmap</p><p class='desc'>Regional KPIs</p></div>
-      </a></li>
-      <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_forecast.svg' data-title='Forecast vs Actuals'>
-        <img src='assets/gallery/dashboard_forecast_thumb.svg' alt='Forecast vs actual dashboard thumbnail'>
-        <div class='meta'><p class='title'>Forecast vs Actuals</p><p class='desc'>Error bands • MAPE/WAPE</p></div>
-      </a></li>
-      <li><a class='gallery-card' href='#' data-full='assets/gallery/chart_feature_importance.svg' data-title='Feature Importance'>
-        <img src='assets/gallery/chart_feature_importance_thumb.svg' alt='Feature importance chart thumbnail'>
-        <div class='meta'><p class='title'>Feature Importance</p><p class='desc'>Top predictive drivers</p></div>
-      </a></li>
-      <li><a class='gallery-card' href='#' data-full='assets/gallery/arch_lakehouse_layers.svg' data-title='Lakehouse Layers'>
-        <img src='assets/gallery/arch_lakehouse_layers_thumb.svg' alt='Lakehouse layers diagram thumbnail'>
-        <div class='meta'><p class='title'>Lakehouse Layers</p><p class='desc'>Raw → Curated → Semantic → BI</p></div>
-      </a></li>
-    </ul>
-  </section>
+<!-- REPLACEMENT SNIPPET: Project Gallery cards now use PNG full-size images for dashboards -->
+<ul class='gallery-grid'>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_exec.png' data-title='Executive KPI Dashboard'>
+    <img src='assets/gallery/dashboard_exec_thumb.svg' alt='Executive KPI Dashboard thumbnail'>
+    <div class='meta'><p class='title'>Executive KPI Dashboard</p><p class='desc'>Revenue • Margin • Volume • Churn</p></div>
+  </a></li>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_elasticity.png' data-title='Pricing Elasticity'>
+    <img src='assets/gallery/dashboard_elasticity_thumb.svg' alt='Pricing Elasticity dashboard thumbnail'>
+    <div class='meta'><p class='title'>Pricing Elasticity</p><p class='desc'>Demand curves and competitor bands</p></div>
+  </a></li>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_geo.png' data-title='Geo Heatmap'>
+    <img src='assets/gallery/dashboard_geo_thumb.svg' alt='Geo heatmap dashboard thumbnail'>
+    <div class='meta'><p class='title'>Geo Heatmap</p><p class='desc'>Regional KPIs</p></div>
+  </a></li>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_forecast.png' data-title='Forecast vs Actuals'>
+    <img src='assets/gallery/dashboard_forecast_thumb.svg' alt='Forecast vs actual dashboard thumbnail'>
+    <div class='meta'><p class='title'>Forecast vs Actuals</p><p class='desc'>Error bands • MAPE/WAPE</p></div>
+  </a></li>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_margin.png' data-title='Margin Decomposition'>
+    <img src='assets/gallery/dashboard_margin_thumb.svg' alt='Margin decomposition dashboard thumbnail'>
+    <div class='meta'><p class='title'>Margin Decomposition</p><p class='desc'>Price • Cost • Mix • Volume</p></div>
+  </a></li>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/dashboard_segments.png' data-title='Customer Segments'>
+    <img src='assets/gallery/dashboard_segments_thumb.svg' alt='Customer segments dashboard thumbnail'>
+    <div class='meta'><p class='title'>Customer Segments</p><p class='desc'>RFM • Cohorts • LTV</p></div>
+  </a></li>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/arch_lakehouse_layers.png' data-title='Lakehouse Layers'>
+    <img src='assets/gallery/arch_lakehouse_layers_thumb.svg' alt='Lakehouse layers diagram thumbnail'>
+    <div class='meta'><p class='title'>Lakehouse Layers</p><p class='desc'>Raw → Curated → Semantic → BI</p></div>
+  </a></li>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/arch_semantic_layer.png' data-title='Semantic Layer'>
+    <img src='assets/gallery/arch_semantic_layer_thumb.svg' alt='Semantic layer diagram thumbnail'>
+    <div class='meta'><p class='title'>Semantic Layer</p><p class='desc'>Dimensions • Facts • KPIs</p></div>
+  </a></li>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/arch_pipeline_etl.png' data-title='Ingestion & Pipelines'>
+    <img src='assets/gallery/arch_pipeline_etl_thumb.svg' alt='Ingestion and pipelines diagram thumbnail'>
+    <div class='meta'><p class='title'>Ingestion & Pipelines</p><p class='desc'>Batch • Stream • CDC</p></div>
+  </a></li>
+  <li><a class='gallery-card' href='#' data-full='assets/gallery/arch_ai_ready.png' data-title='AI Readiness'>
+    <img src='assets/gallery/arch_ai_ready_thumb.svg' alt='AI readiness diagram thumbnail'>
+    <div class='meta'><p class='title'>AI Readiness</p><p class='desc'>LLM assistant • Knowledge layer</p></div>
+  </a></li>
+</ul>
+      </section>
 </main>
 <footer class='site-footer'>
   <div class='container'>
