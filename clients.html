@@ -1,0 +1,69 @@
+
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='styles.css'>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap' rel='stylesheet'>
+<title>Val Maizelev — Site</title></head><body>
+<header class='hero'><div class='container hero__inner'><div>
+<h1 data-i18n='hero_title'></h1>
+<p class='subtitle' data-i18n='hero_subtitle'></p>
+<p class='small' data-i18n='hero_tagline'></p>
+<div class='cta'><a href='overview.html' class='btn' data-i18n='cta_overview'></a>
+<a href='clients.html' class='btn' data-i18n='cta_clients'></a></div>
+</div><img class='headshot' src='assets/headshot.jpg' alt='Portrait of Val Maizelev' onerror="this.style.display='none'" /></div>
+<nav class='topnav container navbar' aria-label='Main'>
+<a href='overview.html' data-i18n='nav_overview'></a>
+<a href='experience.html' data-i18n='nav_experience'></a>
+<a href='skills.html' data-i18n='nav_skills'></a>
+<a href='projects.html' data-i18n='nav_projects'></a>
+<a href='engagements.html' data-i18n='nav_engagements'></a>
+<a href='clients.html' data-i18n='nav_clients'></a>
+<a href='resume.html' data-i18n='nav_resume'></a>
+<div class='lang-switch' aria-label='Language selector'>
+<button class='lang-btn' data-lang='en' onclick="setLanguage('en')" data-i18n='lang_en'></button>
+<button class='lang-btn' data-lang='fr' onclick="setLanguage('fr')" data-i18n='lang_fr'></button>
+<button class='lang-btn' data-lang='ru' onclick="setLanguage('ru')" data-i18n='lang_ru'></button>
+<button class='lang-btn' data-lang='uk' onclick="setLanguage('uk')" data-i18n='lang_uk'></button>
+<button class='lang-btn' data-lang='es' onclick="setLanguage('es')" data-i18n='lang_es'></button>
+</div>
+<button id='theme-toggle' class='btn' aria-label='Toggle dark mode'>☀️ / 🌙</button>
+</nav></header><main class='container'>
+
+<section class='card'><h2 data-i18n='clients_title'></h2>
+<p class='small' data-i18n='clients_note'></p>
+<h3>Federal & Provincial Government</h3>
+<ul class='logo-grid'>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/ministry-of-children-community-and-social-services-mccss_light.svg'><img class='dark-only' src='assets/logos/ministry-of-children-community-and-social-services-mccss_dark.svg'><div class='meta'><span class='name'>MCCSS</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/workplace-safety-and-insurance-board-wsib_light.svg'><img class='dark-only' src='assets/logos/workplace-safety-and-insurance-board-wsib_dark.svg'><div class='meta'><span class='name'>WSIB</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/canada-post-innovapost_light.svg'><img class='dark-only' src='assets/logos/canada-post-innovapost_dark.svg'><div class='meta'><span class='name'>Canada Post</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/independent-electricity-system-operator-ieso-opa_light.svg'><img class='dark-only' src='assets/logos/independent-electricity-system-operator-ieso-opa_dark.svg'><div class='meta'><span class='name'>IESO/OPA</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/ontario-lottery-gaming-corporation-olg_light.svg'><img class='dark-only' src='assets/logos/ontario-lottery-gaming-corporation-olg_dark.svg'><div class='meta'><span class='name'>OLG</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/toronto-transit-commission-ttc_light.svg'><img class='dark-only' src='assets/logos/toronto-transit-commission-ttc_dark.svg'><div class='meta'><span class='name'>TTC</span><span class='desc'>Visit official site</span></div></div></li>
+</ul>
+<h3>Financial Services, Capital Markets & GWAM</h3>
+<ul class='logo-grid'>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/manulife_light.svg'><img class='dark-only' src='assets/logos/manulife_dark.svg'><div class='meta'><span class='name'>Manulife</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/rbc_light.svg'><img class='dark-only' src='assets/logos/rbc_dark.svg'><div class='meta'><span class='name'>RBC</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/cibc_light.svg'><img class='dark-only' src='assets/logos/cibc_dark.svg'><div class='meta'><span class='name'>CIBC</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/ford-credit_light.svg'><img class='dark-only' src='assets/logos/ford-credit_dark.svg'><div class='meta'><span class='name'>Ford Credit</span><span class='desc'>Visit official site</span></div></div></li>
+</ul>
+<h3>Automotive & Retail</h3>
+<ul class='logo-grid'>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/canadian-tire_light.svg'><img class='dark-only' src='assets/logos/canadian-tire_dark.svg'><div class='meta'><span class='name'>Canadian Tire</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/bombardier-recreational-products-brp_light.svg'><img class='dark-only' src='assets/logos/bombardier-recreational-products-brp_dark.svg'><div class='meta'><span class='name'>BRP</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/frito-lay-pepsico_light.svg'><img class='dark-only' src='assets/logos/frito-lay-pepsico_dark.svg'><div class='meta'><span class='name'>Frito-Lay (PepsiCo)</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/lands-end_light.svg'><img class='dark-only' src='assets/logos/lands-end_dark.svg'><div class='meta'><span class='name'>Lands' End</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/chrysler_light.svg'><img class='dark-only' src='assets/logos/chrysler_dark.svg'><div class='meta'><span class='name'>Chrysler</span><span class='desc'>Visit official site</span></div></div></li>
+</ul>
+<h3>Telecom & Pharma & Consulting</h3>
+<ul class='logo-grid'>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/rogers_light.svg'><img class='dark-only' src='assets/logos/rogers_dark.svg'><div class='meta'><span class='name'>Rogers</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/at-t_light.svg'><img class='dark-only' src='assets/logos/at-t_dark.svg'><div class='meta'><span class='name'>AT&T</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/glaxosmithkline-gsk_light.svg'><img class='dark-only' src='assets/logos/glaxosmithkline-gsk_dark.svg'><div class='meta'><span class='name'>GSK</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/shoppers-drug-mart-sdm_light.svg'><img class='dark-only' src='assets/logos/shoppers-drug-mart-sdm_dark.svg'><div class='meta'><span class='name'>SDM</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/kpmg_light.svg'><img class='dark-only' src='assets/logos/kpmg_dark.svg'><div class='meta'><span class='name'>KPMG</span><span class='desc'>Visit official site</span></div></div></li>
+<li><div class='logo-item'><img class='light-only' src='assets/logos/vale_light.svg'><img class='dark-only' src='assets/logos/vale_dark.svg'><div class='meta'><span class='name'>Vale</span><span class='desc'>Visit official site</span></div></div></li>
+</ul>
+</section>
+
+</main><footer class='site-footer'><div class='container'><p data-i18n='footer_copy'></p></div></footer>
+<script src='app.js'></script></body></html>

@@ -1,0 +1,45 @@
+
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='styles.css'>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap' rel='stylesheet'>
+<title>Val Maizelev — Site</title></head><body>
+<header class='hero'><div class='container hero__inner'><div>
+<h1 data-i18n='hero_title'></h1>
+<p class='subtitle' data-i18n='hero_subtitle'></p>
+<p class='small' data-i18n='hero_tagline'></p>
+<div class='cta'><a href='overview.html' class='btn' data-i18n='cta_overview'></a>
+<a href='clients.html' class='btn' data-i18n='cta_clients'></a></div>
+</div><img class='headshot' src='assets/headshot.jpg' alt='Portrait of Val Maizelev' onerror="this.style.display='none'" /></div>
+<nav class='topnav container navbar' aria-label='Main'>
+<a href='overview.html' data-i18n='nav_overview'></a>
+<a href='experience.html' data-i18n='nav_experience'></a>
+<a href='skills.html' data-i18n='nav_skills'></a>
+<a href='projects.html' data-i18n='nav_projects'></a>
+<a href='engagements.html' data-i18n='nav_engagements'></a>
+<a href='clients.html' data-i18n='nav_clients'></a>
+<a href='resume.html' data-i18n='nav_resume'></a>
+<div class='lang-switch' aria-label='Language selector'>
+<button class='lang-btn' data-lang='en' onclick="setLanguage('en')" data-i18n='lang_en'></button>
+<button class='lang-btn' data-lang='fr' onclick="setLanguage('fr')" data-i18n='lang_fr'></button>
+<button class='lang-btn' data-lang='ru' onclick="setLanguage('ru')" data-i18n='lang_ru'></button>
+<button class='lang-btn' data-lang='uk' onclick="setLanguage('uk')" data-i18n='lang_uk'></button>
+<button class='lang-btn' data-lang='es' onclick="setLanguage('es')" data-i18n='lang_es'></button>
+</div>
+<button id='theme-toggle' class='btn' aria-label='Toggle dark mode'>☀️ / 🌙</button>
+</nav></header><main class='container'>
+
+<section class='card compact'><h2 data-i18n='exp_title'></h2>
+<article><h3>Manulife Investment Management — Senior Information Architect (Aug 2024 – Present)</h3>
+<p><strong>Key skills applied:</strong></p>
+<ul class='list'><li>Augment IA & Governance for AI.</li><li>Workshops & exec presentations.</li><li>Business process discovery & requirements.</li><li>Senior user engagement.</li><li>EDL modeling (Curation/Semantic) in Azure Databricks.</li></ul>
+<p><strong>Scope & outcomes:</strong></p>
+<ul class='list'><li>Databricks models (curation/semantic).</li><li>Align CAN/US/Asia requirements.</li><li>AWS/Salesforce integration; GenAI semantics.</li></ul></article>
+<article><h3>BRP — Senior Data Architect / Business Architect (Nov 2023 – May 2024)</h3>
+<ul class='list'><li>SAP→Snowflake (Raw/Gold/Marts); standardized domains.</li><li>MDM; GDPR/SOX; Power BI.</li></ul></article>
+<article><h3>Innovapost — Canada Post — Senior Data Architect / BA (Mar 2022 – Oct 2023)</h3>
+<ul class='list'><li>Margin Optimization, Competitor Rates, Price Elasticity.</li><li>Standards, mappings, EDW layer designs; stored procs/views.</li></ul></article></section>
+<section class='card compact'><h2 data-i18n='exp_earlier'></h2>
+<ul class='list'><li><strong>MCCSS</strong> — CPIN DW; AODA/GLC; PBI POC.</li><li><strong>Canadian Tire</strong> — Lakehouse migration; Data Vault/MDM; best practices.</li><li><strong>OLG</strong> — Enterprise logical model; Customer Hub; KPI/BI validation.</li><li><strong>RBC</strong> — Portfolio accounting mart; standards/mappings.</li><li><strong>WSIB</strong> — EDW/marts; scorecards; governance.</li><li><strong>SDM</strong> — EDW bus; conformed dims; MicroStrategy redesign.</li><li><strong>TTC</strong> — Ridership store; mainframe→Oracle ETL; planning analytics.</li><li><strong>GSK, Rogers, Vale</strong> — BI/DW design and performance.</li></ul></section>
+
+</main><footer class='site-footer'><div class='container'><p data-i18n='footer_copy'></p></div></footer>
+<script src='app.js'></script></body></html>

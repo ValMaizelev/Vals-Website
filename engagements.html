@@ -1,0 +1,39 @@
+
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='styles.css'>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap' rel='stylesheet'>
+<title>Val Maizelev — Site</title></head><body>
+<header class='hero'><div class='container hero__inner'><div>
+<h1 data-i18n='hero_title'></h1>
+<p class='subtitle' data-i18n='hero_subtitle'></p>
+<p class='small' data-i18n='hero_tagline'></p>
+<div class='cta'><a href='overview.html' class='btn' data-i18n='cta_overview'></a>
+<a href='clients.html' class='btn' data-i18n='cta_clients'></a></div>
+</div><img class='headshot' src='assets/headshot.jpg' alt='Portrait of Val Maizelev' onerror="this.style.display='none'" /></div>
+<nav class='topnav container navbar' aria-label='Main'>
+<a href='overview.html' data-i18n='nav_overview'></a>
+<a href='experience.html' data-i18n='nav_experience'></a>
+<a href='skills.html' data-i18n='nav_skills'></a>
+<a href='projects.html' data-i18n='nav_projects'></a>
+<a href='engagements.html' data-i18n='nav_engagements'></a>
+<a href='clients.html' data-i18n='nav_clients'></a>
+<a href='resume.html' data-i18n='nav_resume'></a>
+<div class='lang-switch' aria-label='Language selector'>
+<button class='lang-btn' data-lang='en' onclick="setLanguage('en')" data-i18n='lang_en'></button>
+<button class='lang-btn' data-lang='fr' onclick="setLanguage('fr')" data-i18n='lang_fr'></button>
+<button class='lang-btn' data-lang='ru' onclick="setLanguage('ru')" data-i18n='lang_ru'></button>
+<button class='lang-btn' data-lang='uk' onclick="setLanguage('uk')" data-i18n='lang_uk'></button>
+<button class='lang-btn' data-lang='es' onclick="setLanguage('es')" data-i18n='lang_es'></button>
+</div>
+<button id='theme-toggle' class='btn' aria-label='Toggle dark mode'>☀️ / 🌙</button>
+</nav></header><main class='container'>
+
+<section class='card'><h2 data-i18n='eng_title'></h2>
+<div class='clients-grid'>
+  <article class='client-card'><img class='light-only' src='assets/logos/manulife_light.svg'><img class='dark-only' src='assets/logos/manulife_dark.svg'><div><h3>Manulife</h3><p class='muted'>Financial Services</p><p>Problem → Approach → Outcome.</p></div></article>
+  <article class='client-card'><img class='light-only' src='assets/logos/bombardier-recreational-products-brp_light.svg'><img class='dark-only' src='assets/logos/bombardier-recreational-products-brp_dark.svg'><div><h3>BRP</h3><p class='muted'>Automotive</p><p>Problem → Approach → Outcome.</p></div></article>
+  <article class='client-card'><img class='light-only' src='assets/logos/canada-post-innovapost_light.svg'><img class='dark-only' src='assets/logos/canada-post-innovapost_dark.svg'><div><h3>Canada Post</h3><p class='muted'>Public Sector</p><p>Problem → Approach → Outcome.</p></div></article>
+</div></section>
+
+</main><footer class='site-footer'><div class='container'><p data-i18n='footer_copy'></p></div></footer>
+<script src='app.js'></script></body></html>

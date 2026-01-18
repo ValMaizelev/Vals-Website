@@ -1,0 +1,38 @@
+
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='styles.css'>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap' rel='stylesheet'>
+<title>Val Maizelev — Site</title></head><body>
+<header class='hero'><div class='container hero__inner'><div>
+<h1 data-i18n='hero_title'></h1>
+<p class='subtitle' data-i18n='hero_subtitle'></p>
+<p class='small' data-i18n='hero_tagline'></p>
+<div class='cta'><a href='overview.html' class='btn' data-i18n='cta_overview'></a>
+<a href='clients.html' class='btn' data-i18n='cta_clients'></a></div>
+</div><img class='headshot' src='assets/headshot.jpg' alt='Portrait of Val Maizelev' onerror="this.style.display='none'" /></div>
+<nav class='topnav container navbar' aria-label='Main'>
+<a href='overview.html' data-i18n='nav_overview'></a>
+<a href='experience.html' data-i18n='nav_experience'></a>
+<a href='skills.html' data-i18n='nav_skills'></a>
+<a href='projects.html' data-i18n='nav_projects'></a>
+<a href='engagements.html' data-i18n='nav_engagements'></a>
+<a href='clients.html' data-i18n='nav_clients'></a>
+<a href='resume.html' data-i18n='nav_resume'></a>
+<div class='lang-switch' aria-label='Language selector'>
+<button class='lang-btn' data-lang='en' onclick="setLanguage('en')" data-i18n='lang_en'></button>
+<button class='lang-btn' data-lang='fr' onclick="setLanguage('fr')" data-i18n='lang_fr'></button>
+<button class='lang-btn' data-lang='ru' onclick="setLanguage('ru')" data-i18n='lang_ru'></button>
+<button class='lang-btn' data-lang='uk' onclick="setLanguage('uk')" data-i18n='lang_uk'></button>
+<button class='lang-btn' data-lang='es' onclick="setLanguage('es')" data-i18n='lang_es'></button>
+</div>
+<button id='theme-toggle' class='btn' aria-label='Toggle dark mode'>☀️ / 🌙</button>
+</nav></header><main class='container'>
+
+<section class='card compact'><h2 data-i18n='skills_title'></h2>
+<ul class='pill-list'><li>Enterprise & Information Architecture (Zachman, TOGAF)</li><li>Conceptual / Logical / Physical modeling</li><li>Dimensional & Data Vault</li><li>Roadmaps, Standards, Governance</li><li>Workshops, Stakeholder alignment</li></ul>
+<ul class='pill-list'><li>Azure, AWS, Salesforce</li><li>Snowflake, Oracle, Teradata, DB2, SQL Server</li><li>Databricks, Hadoop (HDFS/Hive/Spark)</li><li>ADF, Informatica, DataStage, SSIS</li><li>Metadata/Lineage, Quality, MDM</li></ul>
+<ul class='pill-list'><li>Power BI, MicroStrategy, Tableau, Cognos, AtScale</li><li>Semantic modeling & KPI frameworks</li><li>Performance tuning & optimization</li></ul>
+<ul class='pill-list'><li>Data Governance operating model</li><li>AODA / Accessibility by design</li><li>PIA/TRA alignment</li><li>GDPR/SOX considerations</li></ul></section>
+
+</main><footer class='site-footer'><div class='container'><p data-i18n='footer_copy'></p></div></footer>
+<script src='app.js'></script></body></html>
