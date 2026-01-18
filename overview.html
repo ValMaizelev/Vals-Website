@@ -1,38 +1,93 @@
 
-<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
-<link rel='stylesheet' href='styles.css'>
-<link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap' rel='stylesheet'>
-<title>Val Maizelev — Site</title></head><body>
-<header class='hero'><div class='container hero__inner'><div>
-<h1 data-i18n='hero_title'></h1>
-<p class='subtitle' data-i18n='hero_subtitle'></p>
-<p class='small' data-i18n='hero_tagline'></p>
-<div class='cta'><a href='overview.html' class='btn' data-i18n='cta_overview'></a>
-<a href='clients.html' class='btn' data-i18n='cta_clients'></a></div>
-</div><img class='headshot' src='assets/headshot.jpg' alt='Portrait of Val Maizelev' onerror="this.style.display='none'" /></div>
-<nav class='topnav container navbar' aria-label='Main'>
-<a href='overview.html' data-i18n='nav_overview'></a>
-<a href='experience.html' data-i18n='nav_experience'></a>
-<a href='skills.html' data-i18n='nav_skills'></a>
-<a href='projects.html' data-i18n='nav_projects'></a>
-<a href='engagements.html' data-i18n='nav_engagements'></a>
-<a href='clients.html' data-i18n='nav_clients'></a>
-<a href='resume.html' data-i18n='nav_resume'></a>
-<div class='lang-switch' aria-label='Language selector'>
-<button class='lang-btn' data-lang='en' onclick="setLanguage('en')" data-i18n='lang_en'></button>
-<button class='lang-btn' data-lang='fr' onclick="setLanguage('fr')" data-i18n='lang_fr'></button>
-<button class='lang-btn' data-lang='ru' onclick="setLanguage('ru')" data-i18n='lang_ru'></button>
-<button class='lang-btn' data-lang='uk' onclick="setLanguage('uk')" data-i18n='lang_uk'></button>
-<button class='lang-btn' data-lang='es' onclick="setLanguage('es')" data-i18n='lang_es'></button>
-</div>
-<button id='theme-toggle' class='btn' aria-label='Toggle dark mode'>☀️ / 🌙</button>
-</nav></header><main class='container'>
+<!doctype html><html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='styles.css'>
+  <link rel='stylesheet' href='gallery.css'>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap' rel='stylesheet'>
+  <title>Val Maizelev — Site</title>
+</head>
+<body>
+<header class='hero'>
+  <div class='container hero__inner'>
+    <div>
+      <h1 data-i18n='hero_title'></h1>
+      <p class='subtitle' data-i18n='hero_subtitle'></p>
+      <p class='small' data-i18n='hero_tagline'></p>
+      <div class='cta'>
+        <a href='overview.html' class='btn' data-i18n='cta_overview'></a>
+        <a href='clients.html' class='btn' data-i18n='cta_clients'></a>
+      </div>
+    </div>
+    <img class='headshot' src='assets/headshot.jpg' alt='Portrait of Val Maizelev' onerror="this.style.display='none'" />
+  </div>
+  <nav class='topnav container navbar' aria-label='Main'>
+    <a href='overview.html' data-i18n='nav_overview'></a>
+    <a href='experience.html' data-i18n='nav_experience'></a>
+    <a href='skills.html' data-i18n='nav_skills'></a>
+    <a href='projects.html' data-i18n='nav_projects'></a>
+    <a href='engagements.html' data-i18n='nav_engagements'></a>
+    <a href='clients.html' data-i18n='nav_clients'></a>
+    <a href='resume.html' data-i18n='nav_resume'></a>
+    <div class='lang-switch' aria-label='Language selector'>
+      <button class='lang-btn' data-lang='en' onclick="setLanguage('en')" data-i18n='lang_en'>EN</button>
+      <button class='lang-btn' data-lang='fr' onclick="setLanguage('fr')" data-i18n='lang_fr'>FR</button>
+      <button class='lang-btn' data-lang='ru' onclick="setLanguage('ru')" data-i18n='lang_ru'>RU</button>
+      <button class='lang-btn' data-lang='uk' onclick="setLanguage('uk')" data-i18n='lang_uk'>UK</button>
+      <button class='lang-btn' data-lang='es' onclick="setLanguage('es')" data-i18n='lang_es'>ES</button>
+    </div>
+    <button id='theme-toggle' class='btn' aria-label='Toggle dark mode'>☀️ / 🌙</button>
+  </nav>
+</header>
+<main class='container'>
+  <section class='card compact'>
+    <h2 data-i18n='overview_title'></h2>
+    <p data-i18n='overview_body'></p>
+    <p><strong data-i18n='overview_linkedin'></strong> <a class='linkout' href='https://www.linkedin.com/in/val-maizelev-a96b54' target='_blank' rel='noopener noreferrer'>https://www.linkedin.com/in/val-maizelev-a96b54</a></p>
+  </section>
 
-<section class='card compact'><h2 data-i18n='overview_title'></h2>
-<p data-i18n='overview_body'></p>
-<p><strong data-i18n='overview_linkedin'></strong> <a class='linkout' href='https://www.linkedin.com/in/val-maizelev-a96b54' target='_blank' rel='noopener noreferrer'>https://www.linkedin.com/in/val-maizelev-a96b54</a></p></section>
-<section class='card compact'><h2 data-i18n='glossary_title'></h2>
-<ul class='list'><li data-i18n='gl_mccss'></li><li data-i18n='gl_olg'></li><li data-i18n='gl_glc'></li><li data-i18n='gl_edl'></li><li data-i18n='gl_edw'></li><li data-i18n='gl_mdm'></li></ul></section>
+  <!-- Process band: Discover → Model → Govern → Deliver -->
+  <section class='card compact'>
+    <h2>How I Work</h2>
+    <ul class='logo-grid'>
+      <li><div class='logo-item'>
+        <img src='assets/gallery/arch_pipeline_etl_thumb.svg' alt='Discover'>
+        <div><strong>Discover</strong><p class='muted'>Workshops, process mapping, problem framing.</p></div>
+      </div></li>
+      <li><div class='logo-item'>
+        <img src='assets/gallery/arch_semantic_layer_thumb.svg' alt='Model'>
+        <div><strong>Model</strong><p class='muted'>Conceptual/logical, vault/dimensions, semantics.</p></div>
+      </div></li>
+      <li><div class='logo-item'>
+        <img src='assets/gallery/arch_lakehouse_layers_thumb.svg' alt='Govern'>
+        <div><strong>Govern</strong><p class='muted'>Standards, lineage, AODA/GLC, access controls.</p></div>
+      </div></li>
+      <li><div class='logo-item'>
+        <img src='assets/gallery/arch_ai_ready_thumb.svg' alt='Deliver'>
+        <div><strong>Deliver</strong><p class='muted'>Data products, dashboards, AI‑assistant readiness.</p></div>
+      </div></li>
+    </ul>
+  </section>
 
-</main><footer class='site-footer'><div class='container'><p data-i18n='footer_copy'></p></div></footer>
-<script src='app.js'></script></body></html>
+  <section class='card compact'>
+    <h2 data-i18n='glossary_title'></h2>
+    <ul class='list'>
+      <li data-i18n='gl_mccss'></li>
+      <li data-i18n='gl_olg'></li>
+      <li data-i18n='gl_glc'></li>
+      <li data-i18n='gl_edl'></li>
+      <li data-i18n='gl_edw'></li>
+      <li data-i18n='gl_mdm'></li>
+    </ul>
+  </section>
+</main>
+<footer class='site-footer'>
+  <div class='container'>
+    <p data-i18n='footer_copy'></p>
+  </div>
+</footer>
+<script src='app.js'></script>
+<script src='gallery.js'></script>
+</body>
+</html>

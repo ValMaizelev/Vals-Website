@@ -1,0 +1,20 @@
+
+/* Visual Pack v1 - Gallery styles (Style A: Executive BI / Consulting Modern) */
+.gallery-grid{list-style:none;padding-left:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.gallery-grid li{margin:0}
+.gallery-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 28px rgba(2,6,23,.06);transition:transform .18s ease, box-shadow .18s ease}
+.gallery-card:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(2,6,23,.12)}
+.gallery-card img{width:100%;height:160px;object-fit:cover;background:#f5f9ff}
+.gallery-card .meta{padding:.7rem .9rem}
+.gallery-card .title{font-weight:700;color:var(--brand);margin:0 0 .25rem}
+.gallery-card .desc{color:var(--muted);margin:0;font-size:.93rem}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,.6);backdrop-filter:blur(4px);z-index:999}
+.modal.open{display:flex}
+.modal__inner{max-width:min(92vw,1280px);max-height:88vh;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(2,6,23,.35)}
+.modal__head{display:flex;align-items:center;justify-content:space-between;padding:.6rem .9rem;border-bottom:1px solid var(--line)}
+.modal__title{font-weight:800;color:var(--brand)}
+.modal__body{padding:.6rem;background:var(--surface)}
+.modal__body img{display:block;max-width:100%;height:auto;border-radius:10px}
+.modal__close{background:transparent;border:1px solid var(--line);border-radius:10px;padding:.3rem .6rem;cursor:pointer}
