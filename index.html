@@ -1,34 +1,160 @@
 
-<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
-<link rel='stylesheet' href='styles.css'>
-<link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap' rel='stylesheet'>
-<title>Val Maizelev — Site</title></head><body>
-<header class='hero'><div class='container hero__inner'><div>
-<h1 data-i18n='hero_title'></h1>
-<p class='subtitle' data-i18n='hero_subtitle'></p>
-<p class='small' data-i18n='hero_tagline'></p>
-<div class='cta'><a href='overview.html' class='btn' data-i18n='cta_overview'></a>
-<a href='clients.html' class='btn' data-i18n='cta_clients'></a></div>
-</div><img class='headshot' src='assets/headshot.jpg' alt='Portrait of Val Maizelev' onerror="this.style.display='none'" /></div>
-<nav class='topnav container navbar' aria-label='Main'>
-<a href='overview.html' data-i18n='nav_overview'></a>
-<a href='experience.html' data-i18n='nav_experience'></a>
-<a href='skills.html' data-i18n='nav_skills'></a>
-<a href='projects.html' data-i18n='nav_projects'></a>
-<a href='engagements.html' data-i18n='nav_engagements'></a>
-<a href='clients.html' data-i18n='nav_clients'></a>
-<a href='resume.html' data-i18n='nav_resume'></a>
-<div class='lang-switch' aria-label='Language selector'>
-<button class='lang-btn' data-lang='en' onclick="setLanguage('en')" data-i18n='lang_en'></button>
-<button class='lang-btn' data-lang='fr' onclick="setLanguage('fr')" data-i18n='lang_fr'></button>
-<button class='lang-btn' data-lang='ru' onclick="setLanguage('ru')" data-i18n='lang_ru'></button>
-<button class='lang-btn' data-lang='uk' onclick="setLanguage('uk')" data-i18n='lang_uk'></button>
-<button class='lang-btn' data-lang='es' onclick="setLanguage('es')" data-i18n='lang_es'></button>
-</div>
-<button id='theme-toggle' class='btn' aria-label='Toggle dark mode'>☀️ / 🌙</button>
-</nav></header><main class='container'>
 
-<section class='card'><h2 data-i18n='welcome_title'></h2><p data-i18n='welcome_copy'></p></section>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  styles.css
+  https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
+  <title>Val Maizelev — Site</title>
+</head>
+<body>
 
-</main><footer class='site-footer'><div class='container'><p data-i18n='footer_copy'></p></div></footer>
-<script src='app.js'></script></body></html>
+  <!-- ======================= NAVIGATION (kept your structure) ======================= -->
+  <header class="nav-bar container" aria-label="Main">
+    <nav class="topnav navbar">
+      overview.html</a>
+      experience.html</a>
+      skills.html</a>
+      projects.html</a>
+      engagements.html</a>
+      clients.html</a>
+      resume.html</a>
+
+      <div class="lang-switch" aria-label="Language selector">
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" data-i18n="lang_en"></button>
+        <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')" data-i18n="lang_fr"></button>
+        <button class="lang-btn" data-lang="ru" onclick="setLanguage('ru')" data-i18n="lang_ru"></button>
+        <button class="lang-btn" data-lang="uk" onclick="setLanguage('uk')" data-i18n="lang_uk"></button>
+        <button class="lang-btn" data-lang="es" onclick="setLanguage('es')" data-i18n="lang_es"></button>
+      </div>
+
+      <button id="theme-toggle" class="btn theme-toggle" aria-label="Toggle dark mode">☀️ / 🌙</button>
+    </nav>
+  </header>
+
+  <!-- ======================= COSMIC HERO ======================= -->
+  <section class="hero cosmic-hero">
+    <div class="container hero__inner">
+      <div class="hero-left">
+        <h1 class="hero-name" data-i18n="hero_title">Val Maizelev</h1>
+        <h2 class="hero-title" data-i18n="hero_subtitle">Information &amp; Data Architecture</h2>
+
+        <p class="hero-text small" data-i18n="hero_tagline">
+          I help organizations design data‑driven foundations, architecture, governance, and analytics — that scale.
+        </p>
+
+        <div class="hero-buttons cta">
+          overview.htmlOverview</a>
+          clients.htmlClients</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Replace val-profile.png with your actual file name/path -->
+        val-profile.png
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- ======================= HOW I WORK ======================= -->
+    <section class="how-i-work">
+      <h2 class="section-title">How I Work</h2>
+      <div class="workflow">
+        <div class="workflow-step">
+          <h3>Discover</h3>
+          <p>Understand the business, data landscape, pain points, and goals.</p>
+        </div>
+        <div class="workflow-step">
+          <h3>Model</h3>
+          <p>Design scalable architecture, governance, lineage, and data models.</p>
+        </div>
+        <div class="workflow-step">
+          <h3>Deliver</h3>
+          <p>Implement analytics, automation, and measurable value — iteratively.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PROJECT GALLERY ======================= -->
+    <section class="project-gallery">
+      <h2 class="section-title">Project Gallery</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          assets/gallery/dashboard_exec.png
+          <h3>Executive KPI Dashboard</h3>
+        </div>
+        <div class="project-card">
+          assets/gallery/dashboard_elasticity.png
+          <h3>Pricing Elasticity Analysis</h3>
+        </div>
+        <div class="project-card">
+          <img src="lery/dashboard_forecast.png
+          <h3>Forecast vs Actuals</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SKILLS ======================= -->
+    <section class="skills-section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <span>Data Architecture</span>
+        <span>Solution Architecture</span>
+        <span>Governance &amp; Lineage</span>
+        <span>ETL / ELT Pipelines</span>
+        <span>Azure</span>
+        <span>Databricks</span>
+        <span>Power BI</span>
+        <span>Snowflake</span>
+        <span>SQL / DAX</span>
+        <span>Modeling (Dimensional / Lakehouse)</span>
+      </div>
+    </section>
+
+    <!-- ======================= EXPERIENCE ======================= -->
+    <section class="experience-section">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Senior IT Architect</h3>
+          <p class="timeline-date">2019 – Present</p>
+          <p>Architecting enterprise solutions across data platforms, analytics, and governance.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Data Solutions Architect</h3>
+          <p class="timeline-date">2014 – 2019</p>
+          <p>Designed BI models, lakehouse structures, and analytics pipelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CLIENTS ======================= -->
+    <section class="clients-section">
+      <h2 class="section-title">Clients</h2>
+      <div class="client-logos">
+        <img src="assets/logos/workplace-safety-and-insurance-board-wsib_light.svg" altdd/adjust other logos as desired -->
+      </div>
+    </section>
+
+    <!-- ======================= WELCOME CARD (kept from original) ======================= -->
+    <section class="card">
+      <h2 data-i18n="welcome_title"></h2>
+      <p  data-i18n="welcome_copy"></p>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER (kept) ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer_copy"></p>
+    </div>
+  </footer>
+
+  app.js</script>
+</body>
+</html>

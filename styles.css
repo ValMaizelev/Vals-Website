@@ -32,9 +32,206 @@
 .dark-only{display:none}
 :root[data-theme="dark"] .light-only{display:none}
 :root[data-theme="dark"] .dark-only{display:inline-block}
+@media print{.navbar,.hero{display:none!important} .container{max-width:100%;padding:0 0.6in} .card{box-shadow:none;border:none;margin:0 0 0.25in 0;padding:0} a{color:#000;text-decoration:none}}
+
+
 /* v4.8.2 additions */
 .lang-switch{display:flex;gap:.35rem;align-items:center;margin-left:auto}
 .lang-btn{background:transparent;color:var(--text);border:1px solid var(--line);border-radius:999px;padding:.25rem .55rem;font:inherit;cursor:pointer}
 .lang-btn:hover{border-color:var(--accent);color:var(--accent)}
 .lang-btn.active,.lang-btn[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
-@media print{.navbar,.hero{display:none!important} .container{max-width:100%;padding:0 0.6in} .card{box-shadow:none;border:none;margin:0 0 0.25in 0;padding:0} a{color:#000;text-decoration:none}}
+
+
+/* ======================================================================
+   COSMIC THEME (home page only) – non‑breaking, class‑scoped additions
+   ====================================================================== */
+
+/* Palette used by the cosmic sections (works with your dark/light vars) */
+:root {
+  --cosmic-bg: #03060f;
+  --cosmic-text: #dce9ff;
+  --cosmic-soft: #a9c7ff;
+  --cosmic-accent: #2384ff;
+  --cosmic-accent-2: #4ca2ff;
+  --cosmic-panel: rgba(20,30,55,0.50);
+  --cosmic-stroke: rgba(120,160,255,0.25);
+}
+:root[data-theme="dark"] {
+  /* keep cosmic readable in dark as well */
+  --cosmic-bg: #03060f;
+  --cosmic-text: #dce9ff;
+  --cosmic-soft: #b8d2ff;
+  --cosmic-accent: #4ca2ff;
+  --cosmic-accent-2: #78b8ff;
+  --cosmic-panel: rgba(20,30,55,0.55);
+  --cosmic-stroke: rgba(120,160,255,0.32);
+}
+
+/* ---------- Navigation minor tune so it fits cosmic too ---------- */
+.nav-bar { padding: 24px 60px; }
+.topnav a { transition: .25s ease; }
+.topnav a:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle { margin-left: .5rem; }
+
+/* ---------- COSMIC HERO (scoped; does not touch your .hero) ---------- */
+.cosmic-hero {
+  /* Cosmic background (light-to-medium blue nebulas on deep navy) */
+  background:
+    radial-gradient(circle at 40% 18%, rgba(40,90,170,.35), transparent 55%),
+    radial-gradient(circle at 78% 62%, rgba(32,118,255,.25), transparent 60%),
+    var(--cosmic-bg);
+  color: var(--cosmic-text);
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.cosmic-hero .hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cosmic-hero .hero-left { max-width: 50%; }
+
+.cosmic-hero .hero-name{
+  font-family: "Brush Script MT 1.6rem;  font-family: "Brush Script MT","Lucida Handwriting",cursive;
+  color: #cbdcff;
+  max-width: 560px;
+}
+
+/* Buttons (reuse your .btn but give cosmic variants) */
+.cosmic-hero .btn { border-radius: 10px; }
+.cosmic-hero .btn.primary{
+  background: var(--cosmic-accent);
+  border-color: var(--cosmic-accent);
+  color:#fff;
+  box-shadow: 0 0 12px rgba(35,132,255,.55);
+}
+.cosmic-hero .btn.primary:hover{
+  background: var(--cosmic-accent-2);
+  border-color: var(--cosmic-accent-2);
+  box-shadow: 0 0 18px rgba(35,132,255,.75);
+}
+.cosmic-hero .btn.secondary{
+  background: rgba(0,0,0,.35);
+  color:#aed0ff;
+  border:1px solid #2d80ff;
+}
+.cosmic-hero .btn.secondary:hover{
+  background: rgba(20,60,120,.4);
+  box-shadow: 0 0 14px rgba(35,132,255,.6);
+}
+
+/* Right-side photo (kept separate from your .headshot class) */
+.hero-right{ width: 40%; display:flex; justify-content:center; }
+.profile-photo{
+  width: 340px; height: 340px; object-fit: cover; border-radius: 50%;
+  border: 4px solid rgba(120,170,255,.35);
+  box-shadow: 0 0 22px rgba(70,130,255,.65), 0 0 60px rgba(40,100,255,.35);
+  animation: cosmicFadeIn 1.2s ease;
+}
+@keyframes cosmicFadeIn { from{opacity:0; transform:scale(.94)} to{opacity:1; transform:scale(1)} }
+
+/* ---------- Section Title (script style to match hero) ---------- */
+.section-title{
+  font-family: "Brush Script MT","Lucida Handwriting",cursive;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  color: var(--cosmic-soft);
+  margin: 0 0 38px 0;
+  text-shadow: 0 0 14px rgba(70,140,255,.45);
+}
+
+/* ---------- HOW I WORK ---------- */
+.how-i-work{ padding: 80px 0; }
+.workflow{ display:flex; gap: 32px; }
+.workflow-step{
+  flex:1; background: var(--cosmic-panel); padding: 24px; border-radius: 14px;
+  border:1px solid var(--cosmic-stroke);
+  box-shadow:0 0 20px rgba(25,80,175,.25);
+  backdrop-filter: blur(4px);
+}
+.workflow-step h3{ font-size:1.2rem; color:#8fbaff; margin:.25rem 0 .6rem; }
+.workflow-step p{ color:#c6d9ff; }
+
+/* ---------- PROJECT GALLERY ---------- */
+.project-gallery{ padding:80px 0; }
+.project-grid{ display:flex; gap:28px; flex-wrap:wrap; }
+.project-card{
+  flex:1 1 320px;
+  background: rgba(20,25,40,.55);
+  border-radius:16px;
+  padding:18px;
+  border:1px solid rgba(110,150,255,.35);
+  box-shadow:0 0 25px rgba(60,120,255,.35);
+  transition:.25s ease;
+}
+.project-card:hover{
+  transform: translateY(-6px);
+  box-shadow:0 0 40px rgba(80,140,255,.55);
+}
+.project-card img{ width:100%; border-radius:12px; margin-bottom:14px; display:block; }
+.project-card h3{ text-align:center; color:#bcd5ff; font-weight:600; }
+
+/* ---------- SKILLS ---------- */
+.skills-section{ padding:80px 0; }
+.skills-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.skills-grid span{
+  background: var(--cosmic-panel);
+  padding:14px 16px; border-radius:10px; text-align:center;
+  color:#d5e4ff; border:1px solid var(--cosmic-stroke);
+  box-shadow:0 0 14px rgba(70,110,255,.25);
+}
+
+/* ---------- EXPERIENCE (vertical timeline) ---------- */
+.experience-section{ padding:80px 0; }
+.timeline{ border-left:2px solid rgba(110,150,255,.4); padding-left:32px; }
+.timeline-item{ margin-bottom:32px; }
+.timeline-item h3{ color:#9cc6ff; }
+.timeline-date{ color:#6f8ac2; margin:4px 0 8px; }
+
+/* ---------- CLIENTS ---------- */
+.clients-section{ padding:80px 0; }
+.client-logos{
+  display:flex; gap:40px; align-items:center;
+  filter: drop-shadow(0 0 10px rgba(120,160,255,.35));
+}
+.client-logos img{ height:55px; opacity:.85; transition:.25s; }
+.client-logos img:hover{ opacity:1; transform: scale(1.05); }
+
+/* ---------- Responsive tweaks for the cosmic home ---------- */
+@media (max-width: 980px){
+  .cosmic-hero .hero__inner{ flex-direction: column; text-align: center; }
+  .cosmic-hero .hero-left{ max-width: 780px; }
+  .hero-right{ width:100%; }
+  .profile-photo{ width: 260px; height: 260px; }
+  .workflow{ flex-direction: column; }
+  .skills-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px){
+  .profile-photo{ width: 220px; height: 220px; }
+  .skills-grid{ grid-template-columns: 1fr; }
+  .project-grid{ gap: 18px; }
+}
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--cosmic-soft);
+  line-height: 1;
+  text-shadow: 0 0 18px rgba(80,140,255,.65);
+  margin: 0;
+}
+
+.cosmic-hero .hero-title{
+  margin-top: 10px;
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #88aee8;
+}
+
+.cosmic-hero .hero-text{
+  margin-top: 18px;
+  font-size: 1.06rem;
+
